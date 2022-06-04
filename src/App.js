@@ -1,18 +1,23 @@
 import React from 'react'
 import Navbar from './components/Navbar';
-
-// import About from "./components/About"
+import { Route,Routes } from 'react-router-dom';
+import About from "./components/About"
 import Home from "./components/Home"
+import Contact from "./components/Contact"
 
 const App=()=> {
   return (
         <div className='App'>
             <Navbar/>
-              {/* <Route path='/'><Home/></Route> */}
+            <Routes>
+              <Route path='/' exact element={<Home/>}/>
+              <Route path='/about' exact element={<About/>}/>
+              <Route path='/contact' exact element={<Contact/>}/>
+
+            </Routes>
             
-            <h1>hello</h1>
         </div>   
-  )
-} 
+  );
+};
 export default App;
   

@@ -6,7 +6,7 @@ const  About=()=> {
     <div className='ui raised very padded text container segment'
     style={{marginTop :"80px"}}>
         <h3 className='ui header'>About</h3>
-        <p> Shivam naghel is b=noobie in web development right now .. </p>
+        <p> about</p>
     </div>
   )
 }
