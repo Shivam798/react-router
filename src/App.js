@@ -8,11 +8,12 @@ import Contact from "./components/Contact"
 const App=()=> {
   return (
         <div className='App'>
+          
             <Navbar/>
             <Routes>
               <Route path='/' exact element={<Home/>}/>
-              <Route path='/about' exact element={<About/>}/>
-              <Route path='/contact' exact element={<Contact/>}/>
+              <Route path='/about'  element={<About/>}/>
+              <Route path='/contact'  element={<Contact/>}/>
 
             </Routes>
             
